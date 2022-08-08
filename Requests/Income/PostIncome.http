@@ -1,0 +1,10 @@
+@url = https://localhost:7114
+
+POST {{url}}/Income
+Content-Type: application/json;
+
+{
+  "description": "",
+  "amount": 0,
+  "date": "2022-08-07T22:58:21.183Z"
+}

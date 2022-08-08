@@ -29,7 +29,7 @@ public class ValidationBehaviour<TRequest, TResponse> : IPipelineBehavior<TReque
         .ToList();
 
       if (failures.Any())
-        throw new Exception(failures.Select(x => x.ErrorMessage).First());
+        throw new ValidationException(failures);
     }
 
     return await next();
